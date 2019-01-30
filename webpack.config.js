@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
@@ -16,6 +17,8 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'umd',
+    globalObject: "(typeof window !== 'undefined' ? window : this)"
   }
 };
