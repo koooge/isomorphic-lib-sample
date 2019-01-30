@@ -1,0 +1,30 @@
+{
+  "name": "isomorphic-lib-sample",
+  "version": "0.1.0",
+  "description": "sample of isomorphic library",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/koooge/isomorphic-lib-sample.git"
+  },
+  "keywords": [
+    "isomorphic",
+    "typescript"
+  ],
+  "author": "koooge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koooge/isomorphic-lib-sample/issues"
+  },
+  "homepage": "https://github.com/koooge/isomorphic-lib-sample#readme",
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
